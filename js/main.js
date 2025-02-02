@@ -57,7 +57,7 @@ async function assemble(code) {
         }
       }
     ]
-    env.arguments = ["file.s", "-o","file.o"]
+    env.arguments = ["file.s", "-o","file.o", "-march rv32im"]
     callAS(env)
   })
 }
